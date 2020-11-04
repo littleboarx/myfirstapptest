@@ -1,0 +1,58 @@
+.sticky{
+  position: sticky;
+  top:0px;
+  z-index: 10;
+  background: white;
+}
+.input-container{
+  height: 5vh !important;
+}
+body{
+  margin: 0px;
+}
+
+[class*="fieldset"]{
+  width:100%;
+
+}
+
+:root {
+  --safe-area-inset-bottom: 20px;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+html{
+  font-size: 3.2vw;
+  font-family: 'pingfang';
+}
+button:focus{
+  outline : none;
+}
+
+@font-face {
+  font-family: 'pingfang';
+  src:url('./pingfang.ttf'),
+}
+
+@font-face {
+  font-family: 'pingfang';
+  src:url('./pingfang.ttf'),
+}
+
+@font-face {
+  font-family: 'PingFang SC';
+  src:url('./pingfang.ttf'),
+}
+
+
+
+
+body ::-webkit-scrollbar { width: 0 !important }  
+
+
+body { overflow: -moz-scrollbars-none; }
+
+
+body { -ms-overflow-style: none; }
