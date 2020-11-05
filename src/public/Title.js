@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const Title = styled.div`
-padding-top:68px;
+padding-top:30px;
 padding-left:24px;
 padding-bottom:12px;
 z-index:1;
