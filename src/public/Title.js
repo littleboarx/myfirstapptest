@@ -5,7 +5,7 @@ padding-left:24px;
 padding-bottom:12px;
 z-index:1;
 font-style: normal;
-font-weight: 600;
+font-weight: 700;
 font-size: 21px;
 line-height: 29.4px;
 font-family:'pingfang';

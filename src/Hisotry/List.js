@@ -30,7 +30,7 @@ left: 11px;
 top: 10px;
 font-family: PingFang SC;
 font-style: normal;
-font-weight: 600;
+font-weight: 700;
 font-size: 15px;
 line-height: 21px;
 color: ${props => props.selected === 0?'#323232':'#FE5E41;'}
