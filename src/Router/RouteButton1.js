@@ -25,6 +25,8 @@ line-height: 14px;
 text-align: center;
 `;
 export const RouteButton = styled.div`
+  position:fixed;
+  bottom: 0px;
   height: 49px;
   width:100%;
   font-size: 12px;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 export const Container = styled.div`
-position: absolute;
+position: fixed;
 left:16px;
 right: 16px;
 bottom: 61px;

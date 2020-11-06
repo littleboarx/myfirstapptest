@@ -53,7 +53,7 @@ class Main extends React.Component {
         <div style={{
           display: 'flex',
           flexDirection: 'column',
-          height: 'calc(var(--vh, 1vh) * 100)',
+          //height: 'calc(var(--vh, 1vh) * 100)',
           justifyContent: 'space-around'
         }}>
           <Switch>

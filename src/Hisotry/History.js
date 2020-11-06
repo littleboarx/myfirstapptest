@@ -38,10 +38,19 @@ export class History extends React.Component {
             display: 'flex',
             flexDirection: 'column',
             maxHeight: 'calc(100% - 49px)',
-            flexGrow: '1'
+            flexGrow: '1',
+            paddingTop:'71px',  
+            paddingBottom:'49px',
 
+        }}><div style={{
+            position: 'fixed',
+            top: '0px',
+            backgroundColor: 'white',
+            zIndex: '1',
         }}>
             <Title>我的记录</Title>
+            </div>
+            
             <div style={{
                 flexGrow: '1',
                 flexShrink: '1',

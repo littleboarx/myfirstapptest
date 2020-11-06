@@ -18,6 +18,7 @@ export class Search extends React.Component {
 const Container = styled.div`
 position:relative;
 height:32px;
+width:100%;
 `
 
 const Input = styled.input`

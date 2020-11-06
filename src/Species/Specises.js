@@ -207,14 +207,23 @@ export class Specises extends React.Component {
       maxHeight: 'calc(100% - 49px)',
       flexGrow: '1'
     }}>
+      <div style = {{
+       position:'fixed',
+       top:'0px', 
+       backgroundColor:'white',
+       zIndex:'1',
+      }}>
       <Title>
         物种检索
               </Title>
       <Search changeKeyWord={this.changeKeyWord} />
+      </div>
       <Bar nums={this.state.count} setShow={this.setShow} />
       {this.state.show ? '' : <Selectlist list={this.state.selectLists} nums={this.state.count} setShow={this.setShow} handleUpdate={this.handleUpdate} handleDelete={this.handleDelete} />}
       <div style={{
         display: 'flex',
+        position: 'relative',
+        top: '103px',
 
         overflow: 'scroll',
         width: '100vw',
