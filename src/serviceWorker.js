@@ -11,7 +11,11 @@
 
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
-
+// eslint-disable-next-line no-restricted-globals
+navigator.serviceWorker.addEventListener('install', event => { // eslint-disable-line
+          self.skipWaiting()
+          // 预缓存其他静态内容
+        })   
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -53,10 +57,8 @@ export function register(config) {
         registerValidSW(swUrl, config);
         
         // eslint-disable-next-line
-        navigator.serviceWorker.addEventListener('install', event => { // eslint-disable-line
-          self.skipWaiting()
-          // 预缓存其他静态内容
-        })   
+        
+          
       }
     });
   }
