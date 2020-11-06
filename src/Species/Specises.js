@@ -214,7 +214,7 @@ export class Specises extends React.Component {
        zIndex:'1',
       }}>
       <Title>
-        物种检索-test
+        物种检索
               </Title>
       <Search changeKeyWord={this.changeKeyWord} />
       </div>
