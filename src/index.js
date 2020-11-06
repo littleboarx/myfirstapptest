@@ -12,7 +12,7 @@ import {
 
 } from "react-router-dom";
 import { RouteButton, RouteButton1, Text, } from './Router/RouteButton1';
-
+import swConfig from './swSet'
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -99,15 +99,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-serviceWorker.register();
-let refreshing = false
-
-
-
-navigator.serviceWorker.addEventListener('controllerchange', () => {
-  if (refreshing) {
-    return
-  }
-  refreshing = true;
-  window.location.reload();
-});
+serviceWorker.register(swConfig);
