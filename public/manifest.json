@@ -3,8 +3,13 @@
   "name": "三界八纲饮食指南",
   "icons": [
     {
-      "src": "1.png",
-      "type": "image/svg",
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
