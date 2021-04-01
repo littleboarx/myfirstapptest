@@ -102,6 +102,7 @@ export class Specises extends React.Component {
       this.checkUpdate();
 
     }
+    
   handleSearch(value) {
     let res = this.search(this.state.lists, value)
     this.setState({ searchLists: res })
