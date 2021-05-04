@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import { RouteButton, RouteButton1, Text, } from './Router/RouteButton1';
 import swConfig from './swSet'
+import styled from 'styled-components'
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -58,7 +59,7 @@ class Main extends React.Component {
         }}>
           <Switch>
 
-            <Route path="/" exact > <Specises setActive={this.setActive} /></Route>
+            <Route path="/" exact ><NotFound /></Route>
             <Route path='/species'><Specises setActive={this.setActive} /> </Route>
             <Route path='/history'><History setActive={this.setActive} /></Route>
           </Switch>
@@ -75,7 +76,17 @@ class Main extends React.Component {
   }
 
 }
-
+const NotFoundWrapper = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+font-size:20px;
+height:100vh;
+`
+function NotFound(){
+  return <NotFoundWrapper>您似乎来到了一个不存在的页面，点击下方按钮切换页面</NotFoundWrapper>
+}
 function HistoryIcon(props) {
   return <svg width="16px" height="16px" viewBox="0 0 16 16" fill="none" >
     <path d="M13 7L16 4L13 3L12 0L9 3L9.6 4.9L8.6 5.9C7.7 5.3 6.6 4.9 5.5 4.9C2.5 5 0 7.5 0 10.5C0 13.5 2.5 16 5.5 16C8.5 16 11 13.5 11 10.5C11 9.3 10.6 8.3 10 7.4L11 6.4L13 7ZM9 10.5C9 12.4 7.4 14 5.5 14C3.6 14 2 12.4 2 10.5C2 8.6 3.6 7 5.5 7C6.1 7 6.7 7.2 7.2 7.4L4.8 9.8C4.4 10.2 4.4 10.8 4.8 11.2C5 11.4 5.3 11.5 5.5 11.5C5.7 11.5 6 11.4 6.2 11.2L8.6 8.8C8.8 9.3 9 9.9 9 10.5Z" fill={props.active ? '#FE5E41' : "#5E5E5E"} />
