@@ -46,4 +46,5 @@ line-height: 29px;
 color: #FE5E41;
 padding-left: 28px;
 position: relative;
+cursor:pointer;
 `;

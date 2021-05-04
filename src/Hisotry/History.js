@@ -45,6 +45,8 @@ export class History extends React.Component {
         }}><div style={{
             position: 'fixed',
             top: '0px',
+            left: '0',
+            right:'0',
             backgroundColor: 'white',
             zIndex: '1',
         }}>
@@ -54,7 +56,8 @@ export class History extends React.Component {
             <div style={{
                 flexGrow: '1',
                 flexShrink: '1',
-                overflow: 'scroll',
+                display:'flex',
+                flexDirection:'column'
             }}>
                 {this.state.historyLists.lists.map((e, key) => {
                     return <HistoryList list={e} key={key} handleDelete={this.handleDelete} />;

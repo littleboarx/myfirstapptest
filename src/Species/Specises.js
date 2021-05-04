@@ -108,7 +108,7 @@ export class Specises extends React.Component {
     this.setState({ searchLists: res })
     let width  = window.innerWidth;
     let num = Math.floor(width/341);
-    let fill = num*2 - res.length%num;
+    let fill = (num - res.length%num)%num;
     this.setState({
       blank: fill
     })
@@ -213,6 +213,8 @@ export class Specises extends React.Component {
        top:'0px', 
        backgroundColor:'white',
        zIndex:'1',
+       right:'0px',
+       left:'0px',
       }}>
       <Title>
         物种检索
@@ -225,13 +227,12 @@ export class Specises extends React.Component {
         display: 'flex',
         position: 'relative',
         top: '103px',
-
-        overflow: 'scroll',
-        width: '100vw',
+        width: '100%',
         flexGrow: '1',
         flexShrink: '1',
         flexWrap: 'wrap',
-        alignContent: 'flex-start'
+        alignContent: 'flex-start',
+        paddingBottom: '50px',
       }}>
         {this.state.searchLists.map((e, key) => {
           return <List list={e} key={key} handleSelect={this.handleSelect} handleDelete={this.handleDelete} />;

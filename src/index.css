@@ -20,9 +20,9 @@ body{
   --safe-area-inset-bottom: 20px;
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   display: none;
-}
+} */
 html{
   font-size: 3.2vw;
   font-family: 'pingfang';
@@ -36,23 +36,13 @@ button:focus{
   src:url('./pingfang.ttf'),
 }
 
-@font-face {
-  font-family: 'pingfang';
-  src:url('./pingfang.ttf'),
-}
-
-@font-face {
-  font-family: 'PingFang SC';
-  src:url('./pingfang.ttf'),
-}
 
 
-
-
-body ::-webkit-scrollbar { width: 0 !important }  
+/* 
+body ::-webkit-scrollbar { width: 0 !important }
 
 
 body { overflow: -moz-scrollbars-none; }
 
 
-body { -ms-overflow-style: none; }
+body { -ms-overflow-style: none; } */

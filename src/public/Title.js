@@ -9,5 +9,5 @@ font-weight: 700;
 font-size: 21px;
 line-height: 29.4px;
 font-family:'pingfang';
-width:calc(100vw - 24px);
+width:100%;
 `;

@@ -14,6 +14,9 @@ import {
 import { RouteButton, RouteButton1, Text, } from './Router/RouteButton1';
 import swConfig from './swSet'
 import styled from 'styled-components'
+const TEXT_WELCOME = `点击下方'物种'按钮开始`;
+const TEXT_ERROR = `您似乎来到了一个不存在的页面，点击下方按钮切换页面`;
+
 class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -58,10 +61,10 @@ class Main extends React.Component {
           justifyContent: 'space-around'
         }}>
           <Switch>
-
-            <Route path="/" exact ><NotFound /></Route>
+            <Route path="/" exact ><NotFound  text={TEXT_WELCOME} /></Route>
             <Route path='/species'><Specises setActive={this.setActive} /> </Route>
             <Route path='/history'><History setActive={this.setActive} /></Route>
+            <Route path="*" exact ><NotFound text={TEXT_ERROR}/></Route>
           </Switch>
           <RouteButton>
             <RouteButton1 to="/species" onClick={() => { this.setActive(0) }}><SpecisesIcon active={this.state.active[0]} /><Text active={this.state.active[0]}>物种</Text></RouteButton1>
@@ -84,8 +87,8 @@ text-align:center;
 font-size:20px;
 height:100vh;
 `
-function NotFound(){
-  return <NotFoundWrapper>您似乎来到了一个不存在的页面，点击下方按钮切换页面</NotFoundWrapper>
+function NotFound({text}){
+  return <NotFoundWrapper>{text}</NotFoundWrapper>
 }
 function HistoryIcon(props) {
   return <svg width="16px" height="16px" viewBox="0 0 16 16" fill="none" >

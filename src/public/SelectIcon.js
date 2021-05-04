@@ -20,4 +20,5 @@ border: 0px;
 width: 16px;
 height : 16px;
 padding: 0px;
+cursor:pointer;
 `;

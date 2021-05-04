@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
 margin-left:16px;
 margin-right:16px;
-width:calc( 100vw - 32px);
+width:auto;
 display: flex;
 flex-direction: row;
 flex-wrap:wrap;
@@ -34,6 +34,7 @@ font-weight:bolder;
 font-size: 14px;
 line-height: 29px;
 color: #FE5E41;
+cursor:pointer;
 `;
 export const Selectcontainer = styled.div`
 width:100%;
