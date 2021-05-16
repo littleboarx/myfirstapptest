@@ -58,7 +58,7 @@ class Main extends React.Component {
           display: 'flex',
           flexDirection: 'column',
           //height: 'calc(var(--vh, 1vh) * 100)',
-          justifyContent: 'space-around'
+          justifyContent: 'space-around',
         }}>
           <Switch>
             <Route path="/" exact ><NotFound  text={TEXT_WELCOME} /></Route>

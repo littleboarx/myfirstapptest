@@ -1,3 +1,4 @@
+
 .sticky{
   position: sticky;
   top:0px;
@@ -9,6 +10,7 @@
 }
 body{
   margin: 0px;
+  overflow-y: scroll;
 }
 
 [class*="fieldset"]{
